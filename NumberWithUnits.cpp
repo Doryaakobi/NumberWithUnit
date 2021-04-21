@@ -33,46 +33,44 @@ namespace ariel{
     //Basic arithmetic operators overloading (+,+=,-,-=)
     NumberWithUnits operator+(const NumberWithUnits &num1, const NumberWithUnits &num2){
 
-        return;
+        return NumberWithUnits{1,"km"};
     }
 
     NumberWithUnits operator+(const NumberWithUnits &num, double add){
-        return NumberWithUnits(num.val + add, num.unit);
+        return NumberWithUnits{1,"km"};
     }
 
     NumberWithUnits operator+=(NumberWithUnits &num1, const NumberWithUnits &num2){
-
-        return;
+        return NumberWithUnits{1,"km"};
     }
 
     NumberWithUnits operator+=(NumberWithUnits &num1, const double add){
-
-        return;
+        return NumberWithUnits{1,"km"};
     }
 
     NumberWithUnits operator-(const NumberWithUnits &num1, const NumberWithUnits &num2){
-
-        return;
+        return NumberWithUnits{1,"km"};
     }
 
     NumberWithUnits operator-(const NumberWithUnits &num1, const double num2){
-        return;
+        return NumberWithUnits{1,"km"};
+
     }
 
     NumberWithUnits operator-( const double num2 , const NumberWithUnits &num1){
-        return;
+        return NumberWithUnits{1,"km"};
     }
 
     NumberWithUnits operator-(const NumberWithUnits &num){
-        return;
+        return NumberWithUnits{1,"km"};
     }
 
     NumberWithUnits operator-=(NumberWithUnits &num1, const NumberWithUnits &num2){
-        return;
+        return NumberWithUnits{1,"km"};
     }
     NumberWithUnits operator-=(NumberWithUnits &num1, const double num2){
 
-        return ;
+        return NumberWithUnits{1,"km"};
     }
 
     //------------------------------------------------------------------------
@@ -80,64 +78,64 @@ namespace ariel{
     //Increment/decrement operators (postfix and prefix)
 
     NumberWithUnits operator--(NumberWithUnits &num, int){
-        return; // postfix decrement
+        return NumberWithUnits{1,"km"}; // postfix decrement
     }
 
     NumberWithUnits operator++(NumberWithUnits &num, int){
-        return; // postfix increment
+        return NumberWithUnits{1,"km"}; // postfix increment
     }
 
     NumberWithUnits operator++(NumberWithUnits &num){
-        return;
+        return NumberWithUnits{1,"km"};
     }
 
     NumberWithUnits operator--(NumberWithUnits &num){
-        return;
+        return NumberWithUnits{1,"km"};
     }
 
     //------------------------------------------------------------------------
 
     //Multipication operators overloading (*,*=)
     NumberWithUnits operator*(NumberWithUnits &num, double mul){
-        return;
+        return NumberWithUnits{1,"km"};
     }
     
     NumberWithUnits operator*=(NumberWithUnits &num, double mul){
-        return;
+        return NumberWithUnits{1,"km"};
     }
 
     NumberWithUnits operator*(double mul, NumberWithUnits &num){
-        return;
+        return NumberWithUnits{1,"km"};
     }
 
     NumberWithUnits operator*=(double mul, NumberWithUnits &num){
-        return;
+        return NumberWithUnits{1,"km"};
     }
     //------------------------------------------------------------------------
 
 
     //Boolean comparisons operators
     bool operator>(const NumberWithUnits& num1, const NumberWithUnits& num2){
-        return;
+        return 1;
     }
     bool operator>=(const NumberWithUnits& num1, const NumberWithUnits& num2){
-        return;
+        return 1;
     }
     bool operator<(const NumberWithUnits& num1, const NumberWithUnits& num2){
-        return;
+        return 1;
     }
     bool operator<=(const NumberWithUnits& num1, const NumberWithUnits& num2){
-        return;
+        return 1;
     }
     bool operator==(const NumberWithUnits& num1, const NumberWithUnits& num2){
-        return;
+        return 1;
     }
     bool operator==(const NumberWithUnits &num, const double d){
-        return;
+        return 1;
     }
 
     bool operator!=(const NumberWithUnits& num1, const NumberWithUnits& num2){
-        return;
+        return 1;
     }
 
 }

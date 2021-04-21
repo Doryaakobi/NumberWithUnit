@@ -18,11 +18,6 @@
 using namespace ariel;
 using namespace std;
 
-enum lenght{cm,m,km};
-enum weight{g,kg,ton};
-enum time{sec,min,h};
-
-
 ifstream units_file{"units.txt"};
 NumberWithUnits a{2, "km"};
 NumberWithUnits b{500, "m"};
